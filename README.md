@@ -13,7 +13,7 @@ App is deployed in vercel on link https://angular-tracking.vercel.app/
 
 ## Performance Optimizations
 To ensure smooth and high-performance updates, the following strategies were used:
-- **ChangeDetectionStrategy.OnPush**: This minimizes the number of re-renders by only updating components when their inputs change.
+
 - **Selective Re-rendering**: Only vehicles that have changed (either in the list or as map markers) are re-rendered, reducing unnecessary updates.
 - **Efficient State Management**: Vehicle data updates are handled through RxJS subscriptions to optimize real-time performance.
 

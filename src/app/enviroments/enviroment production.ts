@@ -1,4 +1,4 @@
 export const environment = {
-  production: false,
+  production: true,
   socketUrl: 'https://trackingliveservice.onrender.com',
 };

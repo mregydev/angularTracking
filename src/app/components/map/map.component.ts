@@ -13,7 +13,6 @@ import { alertVehicleIcon, defaultVehicleIcon, mapBounds, mapOptions } from './m
   imports: [LeafletModule],
   templateUrl: './map.component.html',
   styleUrls: ['./map.component.scss'],
-  changeDetection:ChangeDetectionStrategy.OnPush
 })
 export class MapComponent implements OnInit, OnDestroy {
   // Map options
@@ -104,7 +103,7 @@ export class MapComponent implements OnInit, OnDestroy {
   zoomToFullExtent()
   {
     if (this.map) {
-      this.map.fitBounds(this.bounds); // Zoom to the predefined bounds
+      this.map.fitBounds(this.bounds);
     }
   }
 }

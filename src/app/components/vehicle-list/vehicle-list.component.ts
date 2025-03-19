@@ -5,7 +5,7 @@ import { Subscription } from 'rxjs';
 import { MatListModule } from '@angular/material/list';
 import { MatIconModule } from '@angular/material/icon';
 import { NgFor, NgIf, NgStyle } from '@angular/common';
-import { VehicleService } from '@/app/services/VehicleZoomService.service'; // Import the shared service
+import { VehicleService } from '@/app/services/VehicleZoomService.service';
 
 @Component({
   selector: 'app-vehicle-list',
@@ -21,7 +21,7 @@ export class VehicleListComponent implements OnInit, OnDestroy {
 
   constructor(
     private vehicleSocketService: VehicleSocketService,
-    private vehicleService: VehicleService // Inject the shared service
+    private vehicleService: VehicleService
   ) {}
 
   ngOnInit(): void {
@@ -51,12 +51,12 @@ export class VehicleListComponent implements OnInit, OnDestroy {
   }
 
   // TrackBy function to optimize rendering
-  trackByVehicleId(index: number, vehicle: Vehicle): string {
-    return vehicle.id; // Use the vehicle's unique ID for tracking
+  trackByVehicleId(_: number, vehicle: Vehicle): string {
+    return vehicle.id;
   }
 
   // Zoom to a vehicle on the map
   zoomToVehicle(vehicle: Vehicle): void {
-    this.vehicleService.zoomToVehicle(vehicle); // Trigger zoom event
+    this.vehicleService.zoomToVehicle(vehicle);
   }
 }

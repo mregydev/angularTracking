@@ -1,14 +1,8 @@
-/**
- * MinimizeDetails
- */
-export interface MinimizeDetails {
-  widgetId: string;
-  widgetTitle: string;
-}
+import { Position } from "./Position.model";
+import { VehicleAttributes } from "./VehicleAttributes";
 
 export type VehicleMoveStatus='moving'|'paused'
 export type VehicleWorkingStatus = 'working' | 'damaged' | 'all' | 'none';
-export type Locale = 'en' | 'de';
 
 /**
  * Vehicle
@@ -26,28 +20,3 @@ export interface Vehicle {
   status: VehicleMoveStatus;
 }
 
-/**
- * VehicleAttributes
- */
-export interface VehicleAttributes {
-  speed: number;
-  batteryLevel: number;
-  temperature: number;
-  tirePressure: number;
-  motorEfficiency: number;
-  regenerativeBraking: boolean;
-  oilLevel: number;
-  brakeFluid: number;
-  coolantLevel: number;
-  fuelLevel: number;
-  engineLoad: number;
-  gpsAccuracy: number;
-}
-
-/**
- * Position
- */
-export interface Position {
-  lat: number;
-  lng: number;
-}
