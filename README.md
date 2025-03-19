@@ -3,6 +3,8 @@
 ## Overview
 This is a **Live Tracking Application** that renders a list of vehicles and tracks them in real-time. The app provides the ability to monitor vehicle statuses and detect any issues they may encounter. Vehicles are displayed both in a list and on a map, with real-time updates reflecting their current states.
 
+App is deployed in vercel on link https://angular-tracking.vercel.app/
+
 ## Features
 - **Real-time Vehicle Tracking**: Continuously updates the positions of vehicles on a map.
 - **Vehicle Issue Detection**: Marks vehicles with issues and displays relevant error messages.
