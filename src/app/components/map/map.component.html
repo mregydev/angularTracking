@@ -1,0 +1,17 @@
+<div
+  id="map"
+  leaflet
+  [leafletOptions]="options"
+  [leafletFitBounds]="bounds"
+  [leafletLayers]="layers"
+  (leafletMapReady)="onMapReady($event)"
+></div>
+
+<button
+  mat-raised-button
+  color="primary"
+  class="zoom-to-extent-button"
+  (click)="zoomToFullExtent()"
+>
+  Zoom to Full Extent
+</button>

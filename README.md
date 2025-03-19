@@ -1,27 +1,29 @@
-# Leaflet
+# Live Tracking App
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 18.2.15.
+## Overview
+This is a **Live Tracking Application** that renders a list of vehicles and tracks them in real-time. The app provides the ability to monitor vehicle statuses and detect any issues they may encounter. Vehicles are displayed both in a list and on a map, with real-time updates reflecting their current states.
 
-## Development server
+## Features
+- **Real-time Vehicle Tracking**: Continuously updates the positions of vehicles on a map.
+- **Vehicle Issue Detection**: Marks vehicles with issues and displays relevant error messages.
+- **Expandable/Collapsible List View**: Users can expand or minimize vehicle list items.
+- **Optimized Performance**: Efficient change detection strategy ensures minimal re-renders.
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+## Performance Optimizations
+To ensure smooth and high-performance updates, the following strategies were used:
+- **ChangeDetectionStrategy.OnPush**: This minimizes the number of re-renders by only updating components when their inputs change.
+- **Selective Re-rendering**: Only vehicles that have changed (either in the list or as map markers) are re-rendered, reducing unnecessary updates.
+- **Efficient State Management**: Vehicle data updates are handled through RxJS subscriptions to optimize real-time performance.
 
-## Code scaffolding
+## Map Functionality
+- **Live updates of vehicle positions**
+- **Markers change dynamically based on vehicle issues**
+- **Zooming functionality to focus on specific vehicles**
+- **Bounds adjustment to fit all vehicles in view**
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+## Technologies Used
+- **Angular** with **OnPush Change Detection** for performance optimization
+- **Leaflet** for interactive map visualization
+- **RxJS** for handling real-time data updates efficiently
 
-## Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+This ensures that the app remains responsive, scalable, and delivers real-time tracking with minimal overhead.

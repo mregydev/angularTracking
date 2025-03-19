@@ -1,13 +1,15 @@
 import { Component } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
+import { MapComponent } from "./components/map/map.component";
+import { VehicleListComponent } from "./components/vehicle-list/vehicle-list.component";
+import { MatExpansionModule } from '@angular/material/expansion';
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet],
+  imports: [ MapComponent, VehicleListComponent,MatExpansionModule],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss'
 })
 export class AppComponent {
-  title = 'leaflet';
+  title = 'Live tracking App';
 }

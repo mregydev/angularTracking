@@ -1,0 +1,62 @@
+.vehicle-item {
+  margin: 8px;
+  padding: 16px;
+  border-radius: 8px; // Rounded corners
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 1px solid #e0e0e0; // Light border
+  background-color: #ffffff; // White background
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); // Subtle shadow
+  transition: all 0.3s ease; // Smooth transition for hover effects
+
+  &:hover {
+    transform: translateY(-2px); // Slight lift on hover
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15); // Enhanced shadow on hover
+    border-color: #bdbdbd; // Darker border on hover
+  }
+
+  &:active {
+    transform: translateY(0); // Reset lift on click
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); // Reset shadow on click
+  }
+}
+
+.vehicle-details {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  cursor: pointer;
+
+  h3 {
+    margin: 0;
+    font-size: 18px;
+    font-weight: 500;
+    color: #333333; // Dark text color
+  }
+
+  h4
+  {
+    color: red;
+  }
+}
+
+.status-icon {
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  margin-left: 12px; // Space between text and icon
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); // Subtle shadow for depth
+  transition: transform 0.3s ease, box-shadow 0.3s ease; // Smooth transitions
+
+  &:hover {
+    transform: scale(1.1); // Slight enlargement on hover
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); // Enhanced shadow on hover
+  }
+}
+
+.vehicle-list
+{
+  padding:20px;
+}
