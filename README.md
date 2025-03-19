@@ -8,7 +8,7 @@ App is deployed in vercel on link https://angular-tracking.vercel.app/
 ## Features
 - **Real-time Vehicle Tracking**: Continuously updates the positions of vehicles on a map.
 - **Vehicle Issue Detection**: Marks vehicles with issues and displays relevant error messages.
-- **Expandable/Collapsible List View**: Users can expand or minimize vehicle list items.
+- **Expandable/Collapsible List View**: Users can expand or minimize vehicle list items and when clicking on any listitem it will zoom to corresponding vehicle in the map.
 - **Optimized Performance**: Efficient change detection strategy ensures minimal re-renders.
 
 ## Performance Optimizations
