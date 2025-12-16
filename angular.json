@@ -64,6 +64,18 @@
               "optimization": false,
               "extractLicenses": false,
               "sourceMap": true
+            },
+            "debug": {
+              "fileReplacements": [
+                {
+                  "replace": "src/app/environments/environment.ts",
+                  "with": "src/app/environments/environment.prod.ts"
+                }
+              ],
+              "optimization": false,
+              "sourceMap": true,
+              "extractLicenses": false,
+              "outputHashing": "none"
             }
           },
           "defaultConfiguration": "production"
@@ -76,6 +88,9 @@
             },
             "development": {
               "buildTarget": "leaflet:build:development"
+            },
+            "debug": {
+              "buildTarget": "leaflet:build:debug"
             }
           },
           "defaultConfiguration": "development"
