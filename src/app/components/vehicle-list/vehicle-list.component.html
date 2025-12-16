@@ -1,14 +1,9 @@
 <mat-list class="vehicle-list">
-  <mat-list-item
+  <app-vehicle-list-item
     *ngFor="let vehicle of vehicles; trackBy: trackByVehicleId"
-    class="vehicle-item"
-    (click)="zoomToVehicle(vehicle)"
+    [vehicle]="vehicle"
+    [statusColor]="getStatusColor(vehicle)"
+    (select)="zoomToVehicle($event)"
   >
-    <div class="vehicle-details">
-      <h3>{{ vehicle.name }}</h3>
-      <h4 *ngIf="vehicle.hasIssue">{{ vehicle.errorMessage }}</h4>
-      <span class="status-icon" [ngStyle]="{ 'background-color': getStatusColor(vehicle) }"></span>
-
-    </div>
-  </mat-list-item>
+  </app-vehicle-list-item>
 </mat-list>

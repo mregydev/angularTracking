@@ -6,13 +6,14 @@ import { MatListModule } from '@angular/material/list';
 import { MatIconModule } from '@angular/material/icon';
 import { NgFor, NgIf, NgStyle } from '@angular/common';
 import { VehicleService } from '@/app/services/VehicleZoomService.service';
+import { VehicleListItemComponent } from './vehicle-list-item.component';
 
 @Component({
   selector: 'app-vehicle-list',
   templateUrl: './vehicle-list.component.html',
   styleUrls: ['./vehicle-list.component.scss'],
   standalone: true,
-  imports: [MatListModule, MatIconModule, NgStyle, NgFor,NgIf],
+  imports: [MatListModule, MatIconModule, NgStyle, NgFor, NgIf, VehicleListItemComponent],
 
 })
 export class VehicleListComponent implements OnInit, OnDestroy {
