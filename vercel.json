@@ -1,0 +1,14 @@
+{
+  "buildCommand": "npm run build:vercel",
+  "outputDirectory": "dist/leaflet/browser",
+  "framework": null,
+  "installCommand": "npm install",
+  "devCommand": "npm run start",
+  "rewrites": [
+    {
+      "source": "/(.*)",
+      "destination": "/index.html"
+    }
+  ]
+}
+

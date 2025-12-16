@@ -6,6 +6,7 @@
     "start": "ng serve",
     "start:debug": "ng serve --configuration debug",
     "build": "ng build",
+    "build:vercel": "node scripts/build-vercel.js",
     "build:debug": "ng build --configuration debug",
     "watch": "ng build --watch --configuration development",
     "test": "ng test"
